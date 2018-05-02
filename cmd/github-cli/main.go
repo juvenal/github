@@ -37,11 +37,6 @@ func main() {
 		orgVerb.PrintDefaults()
 		os.Exit(1)
 	}
-	//	helpBaseUsage(os.Args)
-	//} else if (len(os.Args) == 2 && (os.Args[1] == "-h" || os.Args[1] == "--help")) {
-	//	helpBaseUsage(os.Args)
-	//} else {
-	//	command := os.Args[1]
 
 	switch os.Args[1] {
 		case "login": {
@@ -73,39 +68,4 @@ func main() {
 			os.Exit(1)
 		}
 	}
-
-	// Check presence of command and verb
-	//if ! (len(os.Args) < 2) && ! ((len(os.Args) == 2 && os.Args[1] ==  "-h" || os.Args[1] == "--help"))  {
-	//    fmt.Println("Process the parameters given...")
-	//    return
-	//} else {
-	//    helpBaseUsage(os.Args)
-	//    return
-	//}
-
-	// Check if you asked for the '[-]-help' flag
-	//helpPtr := flag.Bool("help", false, "Presents this help instructions")
-
-	//flag.Parse()
-
-	//fmt.Println(*helpPtr)
-
-	//argsWithProg := os.Args
-	//argsWithoutProg := os.Args[1:]
-	//command := os.Args[1]
-
-	//fmt.Println(argsWithProg)
-	//fmt.Println(argsWithoutProg)
-	//fmt.Println(command)
-
-	// Branch to process valid command and verbs
-	//switch command {
-	//	case "login": {
-
-	//	}
-	//	case "repo": {
-
-	//	}
-	//	default:
-	//}
 }
